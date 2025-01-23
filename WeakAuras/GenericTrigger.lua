@@ -3746,7 +3746,7 @@ function WeakAuras.WatchUnitChange(unit)
         handleUnit(unit, eventsToSend, unitUpdate, markerClear, reactionClear)
       end,
       INSTANCE_ENCOUNTER_ENGAGE_UNIT = function(_, eventsToSend)
-        for i = 1, 5 do
+        for i = 1, 10 do
           handleUnit("boss" .. i, eventsToSend, unitUpdate, markerInit, reactionInit)
           handleUnit("boss" .. i .. "target", eventsToSend, unitUpdate, markerInit, reactionInit)
         end
